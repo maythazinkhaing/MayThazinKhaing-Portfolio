@@ -30,7 +30,7 @@ const scrollActive = () => {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 250,
+      sectionTop = current.offsetTop - 260,
       sectionId = current.getAttribute("id"),
       sectionsClass = document.querySelector(
         ".nav_menu a[href*=" + sectionId + "]"
