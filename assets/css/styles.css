@@ -421,6 +421,7 @@ body.light-theme {
 
 .about_data {
   text-align: center;
+  transition: 0.4s;
 }
 
 .about_description {
@@ -634,12 +635,14 @@ body.light-theme {
 
 /*=============== FOOTER ===============*/
 .footer_container {
-  padding: 1.5rem 0 5rem;
+  padding: 3rem 0 8rem;
   transition: 0.4s;
+  /* height: 100%; */
 }
 
 .footer {
   background-color: var(--first-color);
+  /* height: 100vh; */
 }
 
 .footer_title {

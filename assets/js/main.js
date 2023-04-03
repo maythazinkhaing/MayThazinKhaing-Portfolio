@@ -30,15 +30,15 @@ const scrollActive = () => {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 58,
-      sectionId = current.getAttribute("id");
+      sectionTop = current.offsetTop - 250,
+      sectionId = current.getAttribute("id"),
+      sectionsClass = document.querySelector(
+        ".nav_menu a[href*=" + sectionId + "]"
+      );
 
-    sectionsClass = document.querySelector(
-      ".nav_menu a[href*=" + sectionId + "]"
-    );
-    console.log("id" + sectionsClass);
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       sectionsClass.classList.add("active-link");
+      // console.log(scrollY);
     } else {
       sectionsClass.classList.remove("active-link");
     }
