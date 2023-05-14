@@ -343,6 +343,7 @@ body.light-theme {
 
 .home_profile-img {
   width: 190px;
+  max-width: 95%;
 }
 
 .home_photo {
@@ -891,6 +892,10 @@ body.light-theme {
   }
 
   .experience_list:nth-child(odd) {
+    text-align: right;
+  }
+
+  .experience_list:nth-child(odd) {
     float: left;
     clear: right;
     transform: translateX(-30px);
@@ -1020,5 +1025,9 @@ body.light-theme {
   .contact_info {
     width: 70%;
     justify-content: flex;
+  }
+
+  .experience_list:nth-child(odd) {
+    text-align: right;
   }
 }
