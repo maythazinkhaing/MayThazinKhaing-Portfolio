@@ -917,6 +917,12 @@ body.light-theme {
     clear: left;
     transform: translateX(30px);
   }
+
+  .exp_link:nth-child(odd) {
+    float: right;
+    clear: left;
+  }
+
   .footer_container {
     padding-right: 4rem;
     padding-left: 4rem;
@@ -1029,5 +1035,9 @@ body.light-theme {
 
   .experience_list:nth-child(odd) {
     text-align: right;
+  }
+  .exp_link:nth-child(odd) {
+    float: right;
+    clear: left;
   }
 }
