@@ -566,6 +566,9 @@ body.light-theme {
   align-items: center;
   column-gap: 0.25rem;
   cursor: pointer;
+  float: none;
+  clear: none;
+  position: relative;
 }
 
 .exp_link-icon {
@@ -918,11 +921,14 @@ body.light-theme {
     transform: translateX(30px);
   }
 
-  .exp_link:nth-child(odd) {
+  .experience_list:nth-child(odd) .exp_link {
     float: right;
     clear: left;
   }
-
+  .experience_list:nth-child(even) .exp_link {
+    float: left;
+    clear: right;
+  }
   .footer_container {
     padding-right: 4rem;
     padding-left: 4rem;
@@ -1036,8 +1042,12 @@ body.light-theme {
   .experience_list:nth-child(odd) {
     text-align: right;
   }
-  .exp_link:nth-child(odd) {
+  .experience_list:nth-child(odd) .exp_link {
     float: right;
     clear: left;
+  }
+  .experience_list:nth-child(even) .exp_link {
+    float: left;
+    clear: right;
   }
 }
