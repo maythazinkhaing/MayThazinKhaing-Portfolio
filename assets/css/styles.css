@@ -290,6 +290,25 @@ body.light-theme {
   cursor: pointer;
 }
 
+/* KT Variables */
+.back_icon {
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
+  padding-left: 1px;
+  padding-right: 1px;
+  position: relative;
+  transition: 0.4s;
+}
+
+.nav_logo:hover .back_icon {
+  transform: translateX(-0.25rem);
+}
+
 /* Active link */
 .active-link {
   background: linear-gradient(
@@ -734,6 +753,79 @@ body.light-theme {
   transition: 0.4s;
 }
 
+/*=============== Swiper ===============*/
+
+.user_card {
+  background-position: center;
+
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  filter: blur(1.5px);
+  transition: 0.4s;
+}
+
+.swiper {
+  width: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.user_image {
+  width: 100%;
+  display: block;
+  box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 0 10px 0 10px;
+}
+
+.user_description {
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  padding-top: 1rem;
+  color: var(--title-color);
+  display: none;
+  transition: 0.4s;
+  align-self: center;
+}
+
+.swiper-slide-active .user_description {
+  display: block;
+}
+
+/* .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+.section_description {
+  align-self: center;
+  text-align: justify;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-size: var(--smaller-font-size);
+  display: flex;
+  justify-content: space-around;
+}
+
 /*=============== SCROLL BAR ===============*/
 .popup {
   position: relative;
@@ -937,6 +1029,10 @@ body.light-theme {
   .footer_decription {
     font-size: var(--normal-font-size);
   }
+
+  /* .user_container {
+    width: 800px;
+  } */
 }
 
 @media screen and (min-width: 767px) {
@@ -950,6 +1046,10 @@ body.light-theme {
 
   .contact_info {
     justify-content: center;
+  }
+
+  .section_description {
+    font-size: var(--small-font-size);
   }
 }
 
