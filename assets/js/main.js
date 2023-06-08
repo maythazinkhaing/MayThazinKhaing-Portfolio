@@ -11,30 +11,7 @@ function copyPhone() {
     popup.classList.remove("show");
   }, 900);
 }
-/*=============== Swiper JS ===============*/
-var swiper = new Swiper(".user_container", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  loop: true,
-  slidesPerView: 2,
-  coverflowEffect: {
-    rotate: 0,
-    depth: 120,
-    modifier: 3,
-  },
-  breakpoints: {
-    576: {
-      slidesPerView: 3.5,
-    },
-    767: {
-      slidesPerView: 4,
-    },
-    992: {
-      slidesPerView: 4,
-    },
-  },
-});
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () => {
   const header = document.getElementById("header");
@@ -103,6 +80,30 @@ themeButton.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+});
+/*=============== Swiper JS ===============*/
+var swiper = new Swiper(".user_container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 2,
+  coverflowEffect: {
+    rotate: 0,
+    depth: 120,
+    modifier: 3,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 3.5,
+    },
+    767: {
+      slidesPerView: 4,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+  },
 });
 
 /*=============== Animations ===============*/
